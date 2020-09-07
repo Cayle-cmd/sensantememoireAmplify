@@ -1,0 +1,31 @@
+<div class="bg-light justify-content-center mt-5 container"  >
+  <h1>Nouveau Rendez-Vous</h1>
+  <form >
+  <label for="">Nom:</label>
+  <input class="form-group form-control col-5" [(ngModel)]="nom"  name="nom" type="text">
+
+  <label for="">Prenom:</label>
+  <input class="form-group form-control col-5" [(ngModel)]="prenom"  name="prenom" type="text">
+
+  <label for="">Age:</label>
+  <input class="form-group form-control col-5" [(ngModel)]="age" name="age" type="number">
+
+  <label for="">Email:</label>
+  <input class="form-group form-control col-5" [(ngModel)]="email" name="email" type="text">
+
+  <label for="">Date et heure:</label>
+  <input class="form-group form-control col-5" [(ngModel)]="tel" name="tel" type="datetime-local">
+
+  <label for="">Téléphone:</label>
+  <input class="form-group form-control col-5" [(ngModel)]="tel" name="tel" type="number">
+
+  <button class="btn btn-submit btn-primary" (click)="Record()"
+  [disabled]="!nom || !prenom || !age || !email || !tel">Soumettre</button>
+
+</form>
+  <p class="row">{{ message }}</p>
+</div>
+<router-outlet>
+
+
+</router-outlet>

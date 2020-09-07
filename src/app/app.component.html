@@ -1,0 +1,43 @@
+
+<html lang="en">
+  <head>
+    <title>Navbar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+
+  </head>
+    <body class="bg-light">
+
+      <nav class="navbar navbar-expand-sm   navbar-light bg-success">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light"  routerLink="/login" routerLinkActive="active">TM<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" routerLink="/consultations" routerLinkActive="active" >Consultation</a>
+              </li>
+              <li class="nav-item dropdown dmenu">
+              <a class="nav-link text-light" routerLink="/rendez_vous" routerLinkActive="active" id="navbardrop" data-toggle="dropdown">
+                Rendez Vous
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" routerLink="/hospitalisations" routerLinkActive="active">Hospitalisation</a>
+            </li>
+            </ul>
+            <div class="social-part text-light">
+                <a class="nav-link" href="#">Disconnect</a>
+            </div>
+          </div>
+        </nav>
+  </body>
+  <router-outlet></router-outlet>
